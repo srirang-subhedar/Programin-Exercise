@@ -1,6 +1,8 @@
 # Task
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+And in this project I have call the TheMovieDB API which allows me to search for actors/actresses and movies
+Also if we add some wrong search information the it will show a toast message not found.
 
 ## Development server
 
