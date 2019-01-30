@@ -1,0 +1,33 @@
+<H1>Hollywood Encylopedia</H1>
+<div>
+   <input type="text" class="form-control" [(ngModel)] = "name" placeholder="search">
+</div>
+<br>
+<div class="text-center">
+    <button type="button" class="btn-outline-primary" (click)="movies()">MOVIES</button>&nbsp;
+    <button type="button" class="btn-outline-primary" (click)="person()">Actors/Actresses</button>
+</div>
+
+<div >
+<table *ngIf = "arr.length>0">
+    <thead class ="table-primary">
+      <tr>
+        <th>Name</th>
+        <th>Popularity</th>
+        <th *ngIf="arr[0].release_date">Release Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let d of arr">
+        <td>
+          <span *ngIf = "d.title">{{d.title}} </span>
+          <span *ngIf = "d.name">{{d.name}} </span>
+        </td>
+          <td>
+            <span *ngIf = "d.popularity">{{d.popularity}} </span></td>
+          <td *ngIf = "d.release_date"><span >{{d.release_date}} </span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<toaster-container></toaster-container>

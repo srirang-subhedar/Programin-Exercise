@@ -1,0 +1,27 @@
+.btn .btn-outline-primary{
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+margin-top: 10px;
+  margin-left: 40%;
+}
+.form-control{
+  margin-top: 20px;
+  margin-left: 40%;
+  width: 20%;
+
+}
+table, th, td
+{
+    margin: auto;
+    margin-top: 10px;
+    border: solid 1px #333;
+    padding: 2px 4px;
+    font: 15px ;
+}
+th {
+    font-weight:bold;
+}
+H1{
+  text-align: center;
+  color:#876868;
+}
